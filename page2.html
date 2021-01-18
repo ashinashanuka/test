@@ -2,12 +2,21 @@
 <html>
     <head>
         <meta charset=UTF-8 />
-        <link rel="stylesheet" type="text/css" href="page1.css"/>
+        <link rel="stylesheet" type="text/css" href="page2.css"/>
     </head>
 <body>
     <script src="js/three.js"></script>
     <script src="js/three.min.js"></script>
-    <canvas id="c"></canvas>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec laoreet
+        maximus metus, a interdum massa faucibus id.  Pellentesque in mauris elit.
+        Vestibulum quis consectetur nisi. <canvas id="c"></canvas> Nulla pellentesque, sapien in
+        condimentum ullamcorper, mi nisl sollicitudin felis, a ullamcorper sapien
+        dui vel metus.  Nam augue nisi, elementum id diam vel, blandit imperdiet
+        nunc.  Vivamus facilisis imperdiet neque id porttitor.  Mauris sapien
+        felis, mollis tempus orci vitae, sollicitudin varius augue.  Nullam non
+        magna id sem faucibus sollicitudin.  Proin nunc mi, rutrum et elementum
+        ut, auctor eget massa.
+        </p>
 
     <script>
 
@@ -56,9 +65,8 @@
 
         function resizeRendererToDisplaySize(renderer) {
             const canvas = renderer.domElement;
-            const pixelRatio = window.devicePixelRatio;
-            const width  = canvas.clientWidth  * pixelRatio | 0;
-            const height = canvas.clientHeight * pixelRatio | 0;
+            const width = canvas.clientWidth;
+            const height = canvas.clientHeight;
             const needResize = canvas.width !== width || canvas.height !== height;
             if (needResize) {
             renderer.setSize(width, height, false);
@@ -91,7 +99,6 @@
         }
 
         main();
-
 
     </script>
 </body>
